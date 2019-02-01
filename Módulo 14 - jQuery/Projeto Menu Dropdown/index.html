@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color:aquamarine;
+            height: 50px;
+            line-height: 47px;
+        }
+        nav > ul {
+            display: flex;
+        }
+        ul {
+            list-style: none;
+            
+        }
+        li {
+            padding: 0 20px;
+            
+        }
+        li a {
+            font-size: 26px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .menu-dropdown {
+            position: absolute;
+            background-color: aquamarine;
+            height: 150px;
+            width: 170px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="" class="menu">Menu 1</a>
+                <div class="menu-dropdown">
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="" class="menu">Menu 2</a>
+                <div class="menu-dropdown">
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="" class="menu">Menu 3</a>
+                <div class="menu-dropdown">
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="" class="menu">Menu 4</a>
+                <div class="menu-dropdown">
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="" class="menu">Menu 5</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

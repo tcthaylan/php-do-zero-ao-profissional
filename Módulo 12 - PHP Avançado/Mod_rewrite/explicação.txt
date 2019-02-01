@@ -1,0 +1,19 @@
+Módulo do apache que é responsável por fazer uma interpretação mais amigavel das URLs.
+Ignora arquivos e pastas reais.
+Como usar:
+1º Passo: Configurar o apache
+    - xampp/apache/conf/httpd.conf
+    - Abilitar o mod_rewrite
+    - Reiniciar servidor apache
+
+2º Passo: Abilitar url amigável
+    - criar arquivo .htaccess
+    - RewriteEngine On (Liga a máquina reqrite )
+
+    - RewriteCond %{REQUEST_FILENAME} !-f
+    - RewriteCond %{REQUEST_FILENAME} !-d (ignora qualquer url que indique um caminho real (pastas ou arquivos)).
+
+3º Passo: Definir regra para criar a URLs
+    - RewriteRule ^(.*)$ /index.php?q=$1 [L]
+
+Obs: Para funcionar é preciso criar um server virtual.

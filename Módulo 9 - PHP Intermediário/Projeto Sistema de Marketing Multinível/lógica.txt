@@ -1,0 +1,38 @@
+usuario x
+- usuario fulano
+- usuario cicrano
+-- usuario paulo
+--- usuario joão
+---- usuario pedrinho
+----- usuario roberto
+-- usuario pedro
+
+- iniciante = 0 cadastros
+- junior = 1 cadastros
+- diretor = 3 cadastros
+- diretor senior = 5 cadastros 
+- executivo = 10 cadastros
+
+- login na conta e cadastros
+- listar os meus cadastros até o nível x
+- script atualizar as patentes (uma vez ao dia(botão)).
+
+tabela
+create table usuarios (
+	id int primary key auto_increment,
+    id_pai int,
+    data_cadastro timestamp not null default current_timestamp,
+    patente int not null default '1',
+    nome varchar(100) not null,
+    email varchar(100) not null,
+    senha varchar(120) not null
+) default charset utf8;
+
+update usuarios
+set senha = md5('teste')
+where id = '1';
+
+Passos
+- Exibir as patentes
+- Atualizar patentes
+-- qts. cadastros

@@ -1,0 +1,349 @@
+/* ------------------------- Geral -------------------------*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    margin: 0 auto;
+    width: 1250px;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------- Layout -------------------------*/
+/* -- Cabeçalho -- */
+header {
+    height: 120px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    width: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu ul {
+    display: flex;
+}
+.menu a {
+    display: inline-block;
+    padding: 15px;
+    color: #727272;
+    font-size: 14px;
+}
+.menu .active, .menu a:hover{
+    background-color: #39aae1;
+}
+.menu .active {
+    color: #fff;
+}
+
+/* -- Banner -- */
+.banner {
+    display: flex;
+    height: 670px;
+    background-image: url("../images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.banner .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -- Text Banner -- */
+.text-banner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.text-banner h1 {
+    font-size: 70px;
+    text-shadow: 0 1px 0 #555;
+    margin-top: 30px;
+    max-width: 450px;
+}
+.text-banner p {
+    font-size: 25px;
+    text-shadow: 0 1px 0 #555;
+    max-width: 400px;
+}
+
+/* -- Cards Banner -- */
+.cards-banner {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+.cards-banner p {
+    margin: 30px 0 30px 0;
+}
+.card-banner-1,
+.card-banner-2,
+.card-banner-3 {
+    flex: 1;
+    color: #fff;
+    padding: 30px;
+}
+.card-banner-1 {
+    background-color: #39aae1;
+}
+.card-banner-2 {
+    background-color: #0079c7;
+}
+.card-banner-3 {
+    background-color: #2b4c99;
+}
+
+/* -- Botão cards banner -- */
+.botao-card-banner {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.botao-card-banner:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* -- Card Banner 3 -- */
+.card-banner-3 ul {
+    margin-top: 15px;
+}
+.card-banner-3 ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 15px 0;
+}
+.card-banner-3 .date {
+    float: right;
+}
+.card-banner-3 h2, .card-banner-3 .arrows {
+    display: inline-block;
+}
+.arrows {
+    float: right;
+}
+.arrows .fas{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 10px;
+    height: 10px;
+    padding: 5px 8px 10px 8px;
+    margin: 0 -3px 0 -3px;
+}
+.arrows .fas:hover {
+    border-color: #fff;
+}
+
+/* -- Conteudo -- */
+.geral {
+    display: flex;
+}
+.geral .container {
+    display: flex;
+}
+.geral section {
+    flex: 2;
+}
+.geral aside {
+    flex: 1;
+}
+.widget {
+    margin: 30px 0 20px 0;
+}
+.widget-title{
+    font-size: 21px;
+    font-weight: 300;
+}
+.widget-title-bar {
+    border-color: #39aae1;
+    width: 50px;
+    float: left;
+}
+
+/* -- News -- */
+section .widget-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+article .news-data {
+    display: flex;
+}
+article .news-posted-at, 
+article .news-comments {
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 15px;
+}
+article .news-posted-at {
+    background-color: #2b4c99;
+    margin-right: 2px;
+    position: relative;
+}
+article .news-comments {
+    background-color: #39aae1;
+}
+
+/* -- News Post Content -- */
+article {
+    margin-bottom: 30px;
+    margin-right: 26px;
+}
+article .post-content {
+    max-width: 390px;
+    min-width: 240px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.post-content img {
+    width: 100%;
+    margin: 30px 0;
+}
+.post-content h2 a {
+    color: #000;
+    font-weight: 400;
+}
+.post-content p {
+    color: #666;
+    margin: 20px 0;
+}
+.post-content p > a {
+    color: #6a85bb;
+}
+.post-footer ul {
+    display: flex;
+    color: #666;
+    padding-bottom: 20px;
+}
+.post-footer li {
+    padding-right: 10px;
+}
+.post-footer a {
+    color: #666;
+}
+.post-footer a:hover {
+    color: #6a85bb;
+    text-decoration: underline;
+}
+.post-footer .traco-ul {
+    padding-left: 10px; 
+}
+
+/* -- Departaments -- */
+.departaments .widget-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.departament {
+    background-color: #39aae1;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px; 
+}
+
+/* -- Contact -- */
+.contact p {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.contact ul li {
+    border-top: 1px solid rgba(0, 0, 0, 0.2); 
+    padding: 15px 0;
+}
+.contact .border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+}
+.contact li a {
+    text-decoration: underline;
+}
+
+/* -- Footer -- */
+footer {
+    background-color: #2E3033;
+    display: flex;
+}
+/* -- Footer Cards -- */
+footer .cards-footer {
+    display: flex;
+}
+.card-footer-1,
+.card-footer-2,
+.card-footer-3 {
+    flex: 1;
+    display: flex;
+    padding: 36px 30px 31px;
+    color: #fff;
+}
+.card-footer-1 {
+    background-color: #39aae1;
+}
+.card-footer-2 {
+    background-color: #0079c7;
+}
+.card-footer-3 {
+    background-color: #2b4c99;
+}
+.card-desc {
+    margin-left: 25px;
+}
+.card-desc h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.card-desc a {
+    color: #fff;
+    font-size: 30px;
+}
+
+/* -- Footer Area -- */
+.footer-area {
+    display: flex;
+    padding-bottom: 40px;
+}
+.footer-area-item {
+    flex: 1;
+}
+.footer-area-item .widget-title {
+    color: #fff;
+    font-size: 20px;
+}
+.footer-area-item .widget-body p {
+    margin: 40px 0;
+    line-height: 26px;
+}
+.contact span {
+    display: inline-block;
+}
+.text-grey {
+    color: #a5aaae;
+}
+
+/* -- Footer Copy -- */
+.footer-copy {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 30px 0;
+    color: #fff;
+}

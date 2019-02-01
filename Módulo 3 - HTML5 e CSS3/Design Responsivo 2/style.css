@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: coral;
+    text-align: center;
+    height: 80px;
+}
+nav h1 {
+    line-height: 80px;
+}
+section {
+    width: 100%;
+}
+section article {
+    float: left;
+    width: 25%;
+}
+section article h2 {
+    margin: 20px 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width:780px) {
+
+    section article {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    section article {
+        width: 100%;
+    }
+}

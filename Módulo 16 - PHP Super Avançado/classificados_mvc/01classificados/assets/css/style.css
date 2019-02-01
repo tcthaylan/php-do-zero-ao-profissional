@@ -1,0 +1,15 @@
+.card-body-flex {
+    display: flex;
+}
+
+.foto_item {
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.foto_item img {
+    width: 150px;
+    max-height: 200px;
+}

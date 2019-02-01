@@ -1,0 +1,40 @@
+Problemas que um sistema de versionamento revolve ...
+1 - ...
+2 - ...
+
+///Configurando o git///
+git --version
+git config --global user.name "Thaylan Conceição"
+git config --global user.email "tc.thaylan@gmail.com"
+git config --global core.editor vscode
+
+git config --list
+git config user.name
+git config user.email
+
+///Iniciando um Repositório///
+Terminal
+cd - entra em uma pasta
+dir - retorna o diretório
+cd .. - volta uma pasta
+ls -- lista conteúdo
+mkdir nome_pasta - cria uma pasta
+
+Iniciando um Repositório
+git init - cria repositório
+
+Branch - versões do sistema
+Branch Master - versão principal
+
+git status - verifica alterações
+git add -A - pega todos
+git add README.md - adiciona apenal o readme.md
+git commit -m "mensagem"
+git commit -am "mensagem" - add com commit
+
+git log - retorna lista de commits
+git branch - retorna lista de branch, *branch atual 
+
+git reset --soft 'idcommit'   - com add feito
+git reset --mixed 'idcommit'  - add novamente
+git reset --hard 'idcommit'   - apaga o último commit com os arquivos

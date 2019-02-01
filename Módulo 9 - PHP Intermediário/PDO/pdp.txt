@@ -1,0 +1,16 @@
+Utilizando o método prepare(), os valores para a consulta são passados através de parâmetros,que são tratados parcialmente à consulta. Consultas utilizando este método são preferíveis quando os parâmetros desejados são dinâmicos.
+
+Com o método query() as consultas são executadas juntamente com os valores nela passados, sem quaisquer tratamentos interno, sendo que, a parte de tratar desses valores de modo a torna-los seguros para a consulta, são deixados à escolha do programador.
+
+Utilizando as prepared statments com o PDO pode-se usar dois tipos de placeholders ou parâmetros:
+
+O ponto de interrogação ( ? ).
+O dois pontos seguido do nome do parâmetro desejado ( :nome ).
+Não se pode usar os dois tipos de parâmetros na mesma consulta SQL, deve-se escolher um, e usar apenas esse parâmetro na consulta atual, sendo que os valores passados, não devem ser executados diretamente na consulta.
+
+Outra coisa é o facto que que o PDO vai emular as prepared statments para os drivers não suportados por ele nativamente, e nem todos os drivers suportam ambos os tipos.
+
+Usando o ponto de interrogação ( ? ):
+
+$query = DB::getConn()->prepare('select * from tabela where id in (?)');
+$query->execute(array(1));

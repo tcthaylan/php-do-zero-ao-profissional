@@ -1,0 +1,123 @@
+/* --------------Geral-------------- */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul, ol {
+    list-style-type: none;
+}
+/* --------------Layout-------------- */
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+/* -- Barra de navegação -- */
+.barra-navegacao{
+    background-color: #2f2f2f;
+    height: 50px;
+}
+
+/*logo*/
+.barra-navegacao h1 a{
+    color: #fff;
+    line-height: 50px;
+}
+
+/*Nav links*/
+.barra-navegacao h1, 
+.barra-navegacao ul, 
+.barra-navegacao li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.barra-navegacao ul {
+    float: right;
+}
+.barra-navegacao li {
+    font-weight: 700;
+    padding: 0 12px;
+    line-height: 50px;
+    
+}
+.barra-navegacao li a {
+    color: #fff;
+    font-size: 14px;
+}
+.barra-navegacao li:hover{
+    background-color: #3479ba;
+}
+.barra-navegacao li:active{
+    background-color: #3479ba;
+}
+/* -- Banner -- */
+.banner {
+    background-color: #3479ba;
+    height: 300px;
+}
+/*texto banner*/
+.banner p {
+    color: #fff;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.texto-banner {
+    float: left;
+}
+.botao-banner {
+    color: #000;
+    background-color: #ffc001;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 40px;
+    border-radius: 3px;
+} 
+
+/*img banner*/
+.banner img {
+    float: right;
+    margin-right: 50px;
+}
+/* -- Produtos -- */
+.produtos {
+    padding: 30px 0;
+    text-align: center;
+}
+.produtos ol li {
+    display: inline-block;
+}
+.produtos img {
+    margin: 0 6px;
+}
+/* -- Footer -- */
+.footer {
+    color: #fff;
+    background-color: #3479ba;
+    text-align: center;
+    height: 50px;
+}
+/* --------------Tipografia-------------- */
+h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-top: 40px;
+}
+h3 {
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+    line-height: 50px;
+}

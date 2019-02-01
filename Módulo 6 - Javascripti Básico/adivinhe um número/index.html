@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        .numeros {
+            width: 415px;
+        }
+        #n1, #n2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            font-size: 100px;
+            text-align: center;
+            line-height: 200px;
+        }
+        #n1 {
+            float: left;
+            background-color: #eee;
+            margin-right: 10px;
+        }
+        #n2 {
+            float: right;
+
+        }
+        button {
+            width: 415px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body onload="resetar()">
+    <div class="numeros">
+        <div id="n1">0</div>
+        <input type="text" id="n2">
+    </div>
+    <button onclick="verificar()">Verificar</button>
+</body>
+</html>

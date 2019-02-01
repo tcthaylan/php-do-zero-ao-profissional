@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex box</title>
+    <style>
+        .container {
+            background-color: cornflowerblue;
+            display: flex;
+            flex-direction: row;
+        }
+        .container div {
+            flex: 1;
+
+            background-color: darkblue;
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: 25px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
