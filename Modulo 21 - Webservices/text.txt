@@ -1,0 +1,29 @@
+/// O que é um webservice ? ///
+Webservice é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. 
+
+/// Diferença entre API, Webservice e Endpoint ///
+API - Aplication Programming Interface
+- Integração em termos de código (baixa um conjunto de arquivos para a sua aplicação, biblioteca)
+- Integração WEB
+
+Webservice - Serviços de Web
+
+Endpoint
+- URL de integração
+
+/// Verbos GET, POST, PUT e DELETE ///
+GET - Pegar informações
+POST - Enviar informações, cria um novo "produto" (informações)
+PUT - Envia informações, atualiza um "produto" (informações)
+DELETE - Deleta informações
+
+minhaloja.com/api/estoque - GET 
+minhaloja.com/api/produto/123 - GET
+minhaloja.com/api/order/321 - GET
+minhaloja.com/api/order - POST
+minhaloja.com/api/estoque - GET 
+minhaloja.com/api/produto/123 - GET
+minhaloja.com/api/produto/123 - DELETE
+
+/// O que é rest e restful? ///
+ 

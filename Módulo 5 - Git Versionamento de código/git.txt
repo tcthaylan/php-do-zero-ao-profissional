@@ -7,20 +7,19 @@ git --version
 git config --global user.name "Thaylan Conceição"
 git config --global user.email "tc.thaylan@gmail.com"
 git config --global core.editor vscode
-
 git config --list
 git config user.name
 git config user.email
 
-///Iniciando um Repositório///
-Terminal
+///Terminal///
 cd - entra em uma pasta
 dir - retorna o diretório
 cd .. - volta uma pasta
-ls -- lista conteúdo
+ls - lista conteúdo
 mkdir nome_pasta - cria uma pasta
+clear
 
-Iniciando um Repositório
+///Iniciando um Repositório///
 git init - cria repositório
 
 Branch - versões do sistema
@@ -32,9 +31,25 @@ git add README.md - adiciona apenal o readme.md
 git commit -m "mensagem"
 git commit -am "mensagem" - add com commit
 
+///Branch///
 git log - retorna lista de commits
 git branch - retorna lista de branch, *branch atual 
+git branch <nome branch> - cria uma branch (importa o branch atual - copia)
+git checkout <nome branch> - acessa uma branch
+git branch -d <nome do branch> - exclui a branch
 
+///Revertendo modificações///
 git reset --soft 'idcommit'   - com add feito
 git reset --mixed 'idcommit'  - add novamente
 git reset --hard 'idcommit'   - apaga o último commit com os arquivos
+
+HEAD - substitui pelo nome do branch atual
+git checkout HEAD -- <nome do arquivo>    - remove alterações de um unico arquivo
+
+// Diferença entre arquivos
+git diff - log de alterações
+git diff <nome arquivo> - log de alterações de um arquivo especifico
+git diff --name-only - lista de arquivos modificados
+
+////////////////////////////////////////////////////////////////////////
+README.md / README.txt - instruções, comentários, configurações e etc

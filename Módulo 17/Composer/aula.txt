@@ -1,0 +1,12 @@
+/// Aula do bony ///
+Criar composer.json
+composer install - instala dependências
+composer update - atualiza dependências 
+fazer require do autoload do composer 
+
+// Macetes //
+composer update foo/bar - atualiza somente uma dependência
+
+composer require "foo/bar:1.0.0" - instala a dependência sem precisar digitar no composer.json
+
+composer update --lock - atualiza apenas o composer.lock 

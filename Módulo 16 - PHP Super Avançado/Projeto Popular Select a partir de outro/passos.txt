@@ -1,0 +1,5 @@
+- Fazer a listagem do primeiro select
+- Pegar o item selecionado, "change"
+- Requisição AJAX, enviando esse item selecionado
+- Criar um json com as opções e retornar
+- Usa o jason para popular o segundo select
